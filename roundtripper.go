@@ -141,7 +141,13 @@ func (rt *roundTripper) dialTLS(ctx context.Context, network, addr string) (net.
 			utlsConfig.ServerName = rt.serverNameOverwrite
 		}
 
-		t2 := http2.Transport{DialTLS: rt.dialTLSHTTP2, TLSClientConfig: utlsConfig, ConnectionFlow: rt.connectionFlow, HeaderPriority: rt.headerPriority}
+		t2 := http2.Transport{
+			DialTLS:         rt.dialTLSHTTP2,
+			TLSClientConfig: utlsConfig,
+			ConnectionFlow:  rt.connectionFlow,
+			HeaderPriority:  rt.headerPriority,
+			IdleConnTimeout: rt.transportOptions.IdleConnTimeout,
+		}
 
 		if rt.transportOptions != nil {
 			t1 := t2.GetT1()
