@@ -1,7 +1,5 @@
 github.com/andybalholm/brotli v1.0.4 h1:V7DdXeJtZscaqfNuAdSRuRFzuiKlHSC/Zh3zl9qY3JY=
 github.com/andybalholm/brotli v1.0.4/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
-github.com/bogdanfinn/fhttp v0.5.20 h1:joQrA0tVFBQNQ8BbKRmIM972GfawXA+qbCRQlX6dauQ=
-github.com/bogdanfinn/fhttp v0.5.20/go.mod h1:brqi5woc5eSCVHdKYBV8aZLbO7HGqpwyDLeXW+fT18I=
 github.com/bogdanfinn/utls v1.5.16 h1:NhhWkegEcYETBMj9nvgO4lwvc6NcLH+znrXzO3gnw4M=
 github.com/bogdanfinn/utls v1.5.16/go.mod h1:mHeRCi69cUiEyVBkKONB1cAbLjRcZnlJbGzttmiuK4o=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -9,6 +7,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/jsnjack/fhttp v0.0.0-20230417132824-bc330ec44090 h1:kV9f8tQwvVbqzhISVq+bjYL2B3JiyXPVBABSzOY3h3g=
+github.com/jsnjack/fhttp v0.0.0-20230417132824-bc330ec44090/go.mod h1:aexubTMMb3ZqgGFzMNOJdCYkgRmO31S95jTU+kVAoO8=
 github.com/klauspost/compress v1.15.12 h1:YClS/PImqYbn+UILDnqxQCZ3RehC9N318SU3kElDUEM=
 github.com/klauspost/compress v1.15.12/go.mod h1:QPwzmACJjUTFsnSHH934V6woptycfrDDJnH7hvFVbGM=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

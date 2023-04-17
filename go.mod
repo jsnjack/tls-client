@@ -3,9 +3,9 @@ module github.com/jsnjack/tls-client
 go 1.18
 
 require (
-	github.com/bogdanfinn/fhttp v0.5.20
 	github.com/bogdanfinn/utls v1.5.16
 	github.com/google/uuid v1.3.0
+	github.com/jsnjack/fhttp v0.0.0-20230417132824-bc330ec44090
 	github.com/stretchr/testify v1.8.0
 	github.com/tam7t/hpkp v0.0.0-20160821193359-2b70b4024ed5
 	golang.org/x/net v0.1.0
@@ -24,4 +24,4 @@ require (
 
 // replace github.com/bogdanfinn/utls => ../utls
 
-// replace github.com/bogdanfinn/fhttp => ../fhttp
+// replace github.com/jsnjack/fhttp => ../fhttp

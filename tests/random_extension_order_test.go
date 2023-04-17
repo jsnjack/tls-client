@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	http "github.com/bogdanfinn/fhttp"
+	http "github.com/jsnjack/fhttp"
 	tls_client "github.com/jsnjack/tls-client"
 	"github.com/jsnjack/tls-client/shared"
 	"github.com/stretchr/testify/assert"

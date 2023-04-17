@@ -9,12 +9,12 @@ import (
 	"os"
 	"sync"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/cookiejar"
-	"github.com/bogdanfinn/fhttp/http2"
 	tls "github.com/bogdanfinn/utls"
 	"github.com/google/uuid"
-	"github.com/jsnjack/tls-client"
+	http "github.com/jsnjack/fhttp"
+	"github.com/jsnjack/fhttp/cookiejar"
+	"github.com/jsnjack/fhttp/http2"
+	tls_client "github.com/jsnjack/tls-client"
 )
 
 var clientsLock = sync.Mutex{}

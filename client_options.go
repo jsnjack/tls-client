@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
+	http "github.com/jsnjack/fhttp"
 )
 
 type HttpClientOption func(config *httpClientConfig)

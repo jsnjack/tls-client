@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls "github.com/bogdanfinn/utls"
+	http "github.com/jsnjack/fhttp"
 	tls_client "github.com/jsnjack/tls-client"
 	"github.com/jsnjack/tls-client/shared"
 )

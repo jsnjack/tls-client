@@ -11,8 +11,8 @@ import (
 	"sync"
 	"unsafe"
 
-	http "github.com/bogdanfinn/fhttp"
 	"github.com/google/uuid"
+	http "github.com/jsnjack/fhttp"
 	tls_client_cffi_src "github.com/jsnjack/tls-client/cffi_src"
 )
 

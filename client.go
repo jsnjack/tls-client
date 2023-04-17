@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/httputil"
+	http "github.com/jsnjack/fhttp"
+	"github.com/jsnjack/fhttp/httputil"
 	"golang.org/x/net/proxy"
 )
 

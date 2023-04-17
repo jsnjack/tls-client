@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls "github.com/bogdanfinn/utls"
+	http "github.com/jsnjack/fhttp"
 	"github.com/tam7t/hpkp"
 )
 

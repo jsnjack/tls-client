@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/http2"
+	http "github.com/jsnjack/fhttp"
+	"github.com/jsnjack/fhttp/http2"
 	"golang.org/x/net/proxy"
 
 	utls "github.com/bogdanfinn/utls"

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/httptest"
+	http "github.com/jsnjack/fhttp"
+	"github.com/jsnjack/fhttp/httptest"
 	tls_client "github.com/jsnjack/tls-client"
 	"github.com/stretchr/testify/assert"
 )
