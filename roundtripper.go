@@ -114,7 +114,7 @@ func (rt *roundTripper) dialTLS(ctx context.Context, network, addr string) (net.
 		host = rt.serverNameOverwrite
 	}
 
-	conn := utls.UClient(rawConn, &utls.Config{ServerName: host, InsecureSkipVerify: rt.insecureSkipVerify}, rt.clientHelloId, rt.withRandomTlsExtensionOrder, rt.forceHttp1)
+	conn := utls.UClient(rawConn, &utls.Config{ServerName: host, InsecureSkipVerify: rt.insecureSkipVerify, RootCAs: rt.transportOptions.RootCAs}, rt.clientHelloId, rt.withRandomTlsExtensionOrder, rt.forceHttp1)
 	if err = conn.Handshake(); err != nil {
 		_ = conn.Close()
 		return nil, err
@@ -135,7 +135,7 @@ func (rt *roundTripper) dialTLS(ctx context.Context, network, addr string) (net.
 
 	switch conn.ConnectionState().NegotiatedProtocol {
 	case http2.NextProtoTLS:
-		utlsConfig := &utls.Config{InsecureSkipVerify: rt.insecureSkipVerify}
+		utlsConfig := &utls.Config{InsecureSkipVerify: rt.insecureSkipVerify, RootCAs: rt.transportOptions.RootCAs}
 
 		if rt.serverNameOverwrite != "" {
 			utlsConfig.ServerName = rt.serverNameOverwrite
@@ -211,7 +211,7 @@ func (rt *roundTripper) dialTLS(ctx context.Context, network, addr string) (net.
 }
 
 func (rt *roundTripper) buildHttp1Transport() *http.Transport {
-	utlsConfig := &utls.Config{InsecureSkipVerify: rt.insecureSkipVerify}
+	utlsConfig := &utls.Config{InsecureSkipVerify: rt.insecureSkipVerify, RootCAs: rt.transportOptions.RootCAs}
 
 	if rt.serverNameOverwrite != "" {
 		utlsConfig.ServerName = rt.serverNameOverwrite
