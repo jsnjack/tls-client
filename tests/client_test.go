@@ -7,9 +7,9 @@ import (
 	"time"
 
 	http "github.com/bogdanfinn/fhttp"
-	tls_client "github.com/bogdanfinn/tls-client"
-	"github.com/bogdanfinn/tls-client/shared"
 	tls "github.com/bogdanfinn/utls"
+	tls_client "github.com/jsnjack/tls-client"
+	"github.com/jsnjack/tls-client/shared"
 )
 
 func TestClients(t *testing.T) {
