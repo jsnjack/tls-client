@@ -45,6 +45,8 @@ type httpClientConfig struct {
 	withRandomTlsExtensionOrder bool
 	forceHttp1                  bool
 	timeout                     time.Duration
+	// Establish a connection to origin server via ipv4 only
+	disableIPV6 bool
 }
 
 // WithProxyUrl configures a HTTP client to use the specified proxy URL.
@@ -197,5 +199,12 @@ func WithClientProfile(clientProfile ClientProfile) HttpClientOption {
 func WithServerNameOverwrite(serverName string) HttpClientOption {
 	return func(config *httpClientConfig) {
 		config.serverNameOverwrite = serverName
+	}
+}
+
+// WithDisableIPV6 configures a dialer to use tcp4 network argument
+func WithDisableIPV6() HttpClientOption {
+	return func(config *httpClientConfig) {
+		config.disableIPV6 = true
 	}
 }
